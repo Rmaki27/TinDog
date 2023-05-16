@@ -2,13 +2,21 @@ body {
   /* background-color: rgb(43, 40, 58); */
   margin: 0;
   font-family: "Poppins", sans-serif;
+  overflow: visible;
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
 }
 
 nav {
   display: flex;
   padding: 20px;
-  height: 4.5vh;
   justify-content: space-between;
+}
+
+.profile-icon,
+.tindog-icon,
+.chat-icon {
+  cursor: pointer;
 }
 
 .profile-display {
@@ -18,7 +26,6 @@ nav {
 .profile-pic {
   display: block;
   width: 97%;
-  height: 83vh;
   margin: auto;
   border-radius: 20px;
 }
@@ -46,13 +53,17 @@ nav {
 .swipe-options {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 30px;
-  padding: 20px;
-  height: 9vh;
 }
 
 .swipe-icons {
   padding: 35px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  overflow: visible;
+}
+.cross:hover,
+.heart:hover {
+  background-color: #dbfff4;
 }
