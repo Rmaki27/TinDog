@@ -63,7 +63,7 @@ nav {
   border-radius: 50%;
   overflow: visible;
 }
-.cross:hover,
-.heart:hover {
+.dislike-icon:hover,
+.like-icon:hover {
   background-color: #dbfff4;
 }

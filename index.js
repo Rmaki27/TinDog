@@ -10,3 +10,10 @@ function render() {
 }
 
 render();
+
+document.getElementById("dislike-icon").addEventListener("click", () => {
+  console.log("dislike button clicked");
+});
+document.getElementById("like-icon").addEventListener("click", () => {
+  console.log("like button clicked");
+});
