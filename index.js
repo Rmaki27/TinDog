@@ -10,4 +10,3 @@ function render() {
 }
 
 render();
-// console.log(dogs);

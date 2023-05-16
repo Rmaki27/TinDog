@@ -1,3 +1,58 @@
 body {
-  background-color: rgb(43, 40, 58);
+  /* background-color: rgb(43, 40, 58); */
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  padding: 20px;
+  height: 4.5vh;
+  justify-content: space-between;
+}
+
+.profile-display {
+  position: relative;
+}
+
+.profile-pic {
+  display: block;
+  width: 97%;
+  height: 83vh;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.profile-text {
+  position: absolute;
+  bottom: 15px;
+  left: 35px;
+  color: white;
+}
+
+.name {
+  margin: 0;
+  font-size: 3em;
+}
+
+.bio {
+  margin: 0;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 2em;
+  color: #b7b7b7;
+}
+
+.swipe-options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  height: 9vh;
+}
+
+.swipe-icons {
+  padding: 35px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
 }
