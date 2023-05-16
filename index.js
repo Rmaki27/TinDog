@@ -11,9 +11,10 @@ function render() {
 
 render();
 
-document.getElementById("dislike-icon").addEventListener("click", () => {
-  console.log("dislike button clicked");
-});
-document.getElementById("like-icon").addEventListener("click", () => {
-  console.log("like button clicked");
+document.body.addEventListener("click", (e) => {
+  if (e.target.dataset.liked) {
+    console.log("like button clicked");
+  } else if (e.target.dataset.disliked) {
+    console.log("dislike button clicked");
+  }
 });
