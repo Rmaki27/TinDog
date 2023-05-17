@@ -67,3 +67,12 @@ nav {
 .like-icon:hover {
   background-color: #dbfff4;
 }
+
+.liked-badge {
+  display: block;
+  position: absolute;
+  top: 70px;
+  left: 35px;
+  height: 10vh;
+  transform: rotate(-35deg);
+}
