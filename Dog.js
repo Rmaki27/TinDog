@@ -14,10 +14,19 @@ class Dog {
   }
 
   setMatchStatus(matchStatus) {
+    console.log(matchStatus);
     if (matchStatus === "liked") {
+      let { hasBeenLiked } = this;
       document.getElementById(
         "profile-display"
       ).innerHTML += `<img src="./images/badge-like.png" class="liked-badge">`;
+      hasBeenLiked = !hasBeenLiked;
+    } else {
+      let { hasBeenSwiped } = this;
+      document.getElementById(
+        "profile-display"
+      ).innerHTML += `<img src="./images/badge-nope.png" class="disliked-badge">`;
+      hasBeenSwiped = !hasBeenSwiped;
     }
   }
 }

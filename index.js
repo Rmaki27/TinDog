@@ -12,12 +12,12 @@ function render() {
 render();
 
 document.body.addEventListener("click", (e) => {
-  if (e.target.dataset.liked) {
-    // console.log("like button clicked");
-    console.log(e.target.dataset.liked);
-
+  if (e.target.dataset.liked && dog1.hasBeenLiked === false) {
+    console.log("like button clicked");
+    // console.log(e.target.dataset.liked);
     dog1.setMatchStatus(e.target.dataset.liked);
   } else if (e.target.dataset.disliked) {
     console.log("dislike button clicked");
+    dog1.setMatchStatus(e.target.dataset.disliked);
   }
 });

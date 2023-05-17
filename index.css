@@ -76,3 +76,12 @@ nav {
   height: 10vh;
   transform: rotate(-35deg);
 }
+
+.disliked-badge {
+  display: block;
+  position: absolute;
+  top: 70px;
+  left: 35px;
+  height: 10vh;
+  transform: rotate(-35deg);
+}
